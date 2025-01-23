@@ -1,0 +1,126 @@
+/* Login.module.css */
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img_cont{
+    flex: 1;
+    background: url('/m_image.png') no-repeat center center;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:transparent;
+    color: white;
+  }
+  .heading{
+    float: left;
+    margin-left: 70px;
+  }
+  .ct_logo img{
+    margin-top: 30px;
+    margin-left: 30px;
+    /* background: red; */
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: transparent;
+  }
+.login {
+    text-align: center;
+    flex: 1.5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .login input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+  }
+  
+  .login button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1B48DA;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navButtons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  .navButtons button:hover {
+    background: green;
+    color: white;
+    transition: background 0.3s;
+  }
+  .sign_btn:hover{
+    background: green;
+    color: white;
+    transition: background 0.3s;
+  }
+  .navButtons button.active {
+    background-color: #1B48DA;
+    color: white;
+  }
+  
+.sign_btn{
+    width: 82%;
+}
+  
+@media (max-width: 768px) {
+    .main {
+        justify-content: center;
+        align-items: center;
+        background: url('/m_image.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+    }
+
+    .login {
+        width: 90%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        z-index: 1;
+    }
+
+    .img_cont {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navButtons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navButtons button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
